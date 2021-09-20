@@ -39,11 +39,11 @@ var (
 )
 
 func DoReport() error {
-	fmt.Printf("开始打卡~")
+	log.Printf("开始打卡~")
 
 	reportFile, err := os.Open("report_conf.json")
 	if err != nil {
-		fmt.Printf("open file error=%+v\n", err)
+		log.Printf("open file error=%+v\n", err)
 		return err
 	}
 	defer reportFile.Close()
@@ -53,7 +53,7 @@ func DoReport() error {
 	stus := []*Report{}
 	err = decoder.Decode(&stus)
 	if err != nil {
-		fmt.Printf("parse report conf error=%+v\n", err)
+		log.Printf("parse report conf error=%+v\n", err)
 		return err
 	}
 
@@ -65,7 +65,7 @@ func DoReport() error {
 		form := url.Values{}
 		err := formEncoder.Encode(stu, form)
 		if err != nil {
-			fmt.Printf("form encode error,student=%+v,err=%+v\n", stu, err)
+			log.Printf("form encode error,student=%+v,err=%+v\n", stu, err)
 			continue
 		}
 
@@ -76,12 +76,12 @@ func DoReport() error {
 
 		resp, err := client.Do(req)
 		if err != nil {
-			fmt.Printf("postForm error,student=%+v,err=%+v\n", stu, err)
+			log.Printf("postForm error,student=%+v,err=%+v\n", stu, err)
 			continue
 		}
 
 		respBody, _ := ioutil.ReadAll(resp.Body)
-		fmt.Printf("打卡日志:student=%+v\nresp=%+v\nresponse_body=%s\n", stu, resp, string(respBody))
+		log.Printf("打卡日志:student=%+v\nresp=%+v\nresponse_body=%s\n", stu, resp, string(respBody))
 	}
 	return nil
 }
