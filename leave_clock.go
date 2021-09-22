@@ -20,7 +20,7 @@ func Doleave() {
 	client := &http.Client{}
 	req, _ := http.NewRequest(http.MethodPost, "https://service.bupt.edu.cn/site/apps/launch", strings.NewReader(form.Encode()))
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Cookie", "_ga=GA1.3.1487030133.1601201572,PHPSESSID=ST-3093201-FhytAodxpKecDeFmxbma-IfHi-cas-1631548189222,vjuid=196680,vjvd=7027e8c1faeec374cfa5332a1abd51c4,vt=147268262")
+	req.Header.Set("Cookie", "_ga=GA1.3.1487030133.1601201572;PHPSESSID=ST-3093201-FhytAodxpKecDeFmxbma-IfHi-cas-1631548189222;vjuid=196680;vjvd=7027e8c1faeec374cfa5332a1abd51c4;vt=147268262")
 	req.Header.Set("sec-fetch-mode", "cors")
 	req.Header.Set("Referer", "https://service.bupt.edu.cn/v2/matter/m_start?id=578")
 	req.Header.Set("Origin", "https://service.bupt.edu.cn")
