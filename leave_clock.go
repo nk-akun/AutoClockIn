@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
@@ -26,7 +27,7 @@ func Doleave() {
 	form["data"] = []string{data}
 	form["starter_depart_id"] = []string{starterDepartId}
 
-	// client := &http.Client{}
+	client := &http.Client{}
 	req, _ := http.NewRequest(http.MethodPost, "https://service.bupt.edu.cn/site/apps/launch", strings.NewReader(form.Encode()))
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Set("Cookie", "_ga=GA1.3.1487030133.1601201572;PHPSESSID=ST-3093201-FhytAodxpKecDeFmxbma-IfHi-cas-1631548189222;vjuid=196680;vjvd=7027e8c1faeec374cfa5332a1abd51c4;vt=147268262")
@@ -34,13 +35,11 @@ func Doleave() {
 	req.Header.Set("Referer", "https://service.bupt.edu.cn/v2/matter/m_start?id=578")
 	req.Header.Set("Origin", "https://service.bupt.edu.cn")
 
-	log.Printf("request=%+v\n\n data=%s\n", req, data)
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Printf("postForm error,err=%+v\n", err)
+	}
 
-	// resp, err := client.Do(req)
-	// if err != nil {
-	// 	log.Printf("postForm error,err=%+v\n", err)
-	// }
-
-	// respBody, _ := ioutil.ReadAll(resp.Body)
-	// log.Printf("打卡日志:request=%+v\n\nresp=%+v\n\nresponse_body=%s\n", req, resp, string(respBody))
+	respBody, _ := ioutil.ReadAll(resp.Body)
+	log.Printf("打卡日志:request=%+v\n\nresp=%+v\n\nresponse_body=%s\n", req, resp, string(respBody))
 }
