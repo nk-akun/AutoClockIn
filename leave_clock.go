@@ -34,7 +34,7 @@ func Doleave() {
 	req.Header.Set("Referer", "https://service.bupt.edu.cn/v2/matter/m_start?id=578")
 	req.Header.Set("Origin", "https://service.bupt.edu.cn")
 
-	log.Printf("request:%+v\n\n", req)
+	log.Printf("request=%+v\n\n data=%s\n", req, data)
 
 	// resp, err := client.Do(req)
 	// if err != nil {
