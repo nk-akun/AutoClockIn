@@ -19,7 +19,7 @@ func Doleave() {
 	unknownTime, _ := time.ParseInLocation("2006-01-02 15:04:05", now.AddDate(0, 0, -1).Format("2006-01-02")+" 16:00:00", loc)
 	unknownTimeStr := unknownTime.Format("2006-01-02T15:04:05.000Z")
 
-	data := fmt.Sprintf("{\"app_id\":\"578\",\"form_data\":{\"1716\":{\"User_5\":\"马荣坤\",\"User_7\":\"2020141056\",\"User_9\":\"计算机学院（国家示范性软件学院）\",\"User_11\":\"13210123307\",\"SelectV2_58\":[{\"name\":\"西土城校区\",\"value\":\"2\",\"default\":0,\"imgdata\":\"\"}],\"UserSearch_60\":{\"uid\":72870,\"name\":\"付泓霖\",\"number\":\"2010813766\"},\"Calendar_62\":%s,\"Calendar_50\":%s,\"Calendar_47\":%s,\"Input_28\":\"银行\",\"MultiInput_30\":\"取钱\",\"Radio_52\":{\"value\":\"1\",\"name\":\"本人已阅读并承诺\"},\"Validate_63\":\"\",\"Alert_65\":\"\",\"Validate_66\":\"\",\"Alert_67\":\"\"}}}", unknownTimeStr, goutTimeStr, backTimeStr)
+	data := fmt.Sprintf("{\"app_id\":\"578\",\"form_data\":{\"1716\":{\"User_5\":\"马荣坤\",\"User_7\":\"2020141056\",\"User_9\":\"计算机学院（国家示范性软件学院）\",\"User_11\":\"13210123307\",\"SelectV2_58\":[{\"name\":\"西土城校区\",\"value\":\"2\",\"default\":0,\"imgdata\":\"\"}],\"UserSearch_60\":{\"uid\":72870,\"name\":\"付泓霖\",\"number\":\"2010813766\"},\"Calendar_62\":\"%s\",\"Calendar_50\":\"%s\",\"Calendar_47\":\"%s\",\"Input_28\":\"银行\",\"MultiInput_30\":\"取钱\",\"Radio_52\":{\"value\":\"1\",\"name\":\"本人已阅读并承诺\"},\"Validate_63\":\"\",\"Alert_65\":\"\",\"Validate_66\":\"\",\"Alert_67\":\"\"}}}", unknownTimeStr, goutTimeStr, backTimeStr)
 	starterDepartId := "181789"
 
 	form := url.Values{}
