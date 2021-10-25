@@ -10,7 +10,7 @@ import (
 var log = logrus.New()
 
 func init() {
-	logFile := "/root/go/src/github.com/nk-akun/AutoClockIn/clock_in.log"
+	logFile := "/root/work/repos/gorepos/src/github.com/nk-akun/AutoClockIn/clock_in.log"
 	f, err := os.OpenFile(logFile, os.O_APPEND|os.O_WRONLY, os.ModeAppend)
 	if err != nil && os.IsNotExist(err) {
 		f, _ = os.OpenFile(logFile, os.O_WRONLY|os.O_CREATE, 0755)
