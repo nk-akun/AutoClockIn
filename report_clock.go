@@ -26,7 +26,7 @@ type Report struct {
 	City                  string `json:"city" schema:"city"`                        // 城市
 	GeoApiInfo            string `json:"geo_api_info" schema:"geo_api_info"`        // 地理位置信息
 	CreateTime            string `json:"create_time" schema:"created"`              // 创建时间
-	Sfzx                  string `json:"sfzx" schema:"sfzx"`                        // 不知何意
+	Sfzx                  string `json:"sfzx" schema:"sfzx"`                        // 是否在校
 	SchoolReason          string `json:"school_reason" schema:"fxyy"`               // 返校原因
 	HasVaccine            string `json:"has_vaccine" schema:"sfjzxgym"`             // 是否已经接种疫苗
 	Sfjzdezxgym           string `json:"sfjzdezxgym" schema:"sfjzdezxgym"`          // 不知何意
@@ -41,7 +41,7 @@ var (
 func DoReport() error {
 	log.Printf("开始打卡~")
 
-	reportFile, err := os.Open("/root/work/repos/gorepos/src/github.com/nk-akun/AutoClockIn/report_conf.json")
+	reportFile, err := os.Open("/root/work/repos/gorepos/src/github.com/nk-akun/AutoClockIn/report_conf_home.json")
 	if err != nil {
 		log.Printf("open file error=%+v\n", err)
 		return err
