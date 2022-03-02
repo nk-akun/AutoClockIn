@@ -1,0 +1,36 @@
+[
+  {
+    "uid": "49057",
+    "vaccine_related_explain": "已接种～",
+    "vaccine_in_school": "3",
+    "body_heat": "2",
+    "address": "北京市海淀区北太平庄街道北三环中路40号社区(师大北路)",
+    "area": "北京市 海淀区",
+    "province": "北京市",
+    "city": "北京市",
+    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":39.965676540799,\"R\":116.363006184896,\"lng\":116.363006,\"lat\":39.965677},\"location_type\":\"html5\",\"message\":\"Get geolocation success.Convert Success.Get address success.\",\"accuracy\":150,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"010\",\"adcode\":\"110108\",\"businessAreas\":[{\"name\":\"小西天\",\"id\":\"110108\",\"location\":{\"Q\":39.957147,\"R\":116.364058,\"lng\":116.364058,\"lat\":39.957147}},{\"name\":\"牡丹园\",\"id\":\"110108\",\"location\":{\"Q\":39.977965,\"R\":116.37172700000002,\"lng\":116.371727,\"lat\":39.977965}},{\"name\":\"马甸\",\"id\":\"110102\",\"location\":{\"Q\":39.968004,\"R\":116.381731,\"lng\":116.381731,\"lat\":39.968004}}],\"neighborhoodType\":\"商务住宅;住宅区;住宅小区\",\"neighborhood\":\"北三环中路40号社区(师大北路)\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"杏坛路\",\"streetNumber\":\"40-5号\",\"country\":\"中国\",\"province\":\"北京市\",\"city\":\"\",\"district\":\"海淀区\",\"township\":\"北太平庄街道\"},\"formattedAddress\":\"北京市海淀区北太平庄街道北三环中路40号社区(师大北路)\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+    "sfzx": "1",
+    "school_reason": "开学啦",
+    "has_vaccine": "1",
+    "sfjzdezxgym": "1",
+    "id": "13578779",
+    "eai-sess": "a1ui3vql0tp0rb30lhmoubho91"
+  },
+  {
+    "uid": "49056",
+    "vaccine_related_explain": "已接种～",
+    "vaccine_in_school": "3",
+    "body_heat": "2",
+    "address": "北京市海淀区北太平庄街道北三环中路40号社区(师大北路)",
+    "area": "北京市 海淀区",
+    "province": "北京市",
+    "city": "北京市",
+    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":39.965676540799,\"R\":116.363006184896,\"lng\":116.363006,\"lat\":39.965677},\"location_type\":\"html5\",\"message\":\"Get geolocation success.Convert Success.Get address success.\",\"accuracy\":150,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"010\",\"adcode\":\"110108\",\"businessAreas\":[{\"name\":\"小西天\",\"id\":\"110108\",\"location\":{\"Q\":39.957147,\"R\":116.364058,\"lng\":116.364058,\"lat\":39.957147}},{\"name\":\"牡丹园\",\"id\":\"110108\",\"location\":{\"Q\":39.977965,\"R\":116.37172700000002,\"lng\":116.371727,\"lat\":39.977965}},{\"name\":\"马甸\",\"id\":\"110102\",\"location\":{\"Q\":39.968004,\"R\":116.381731,\"lng\":116.381731,\"lat\":39.968004}}],\"neighborhoodType\":\"商务住宅;住宅区;住宅小区\",\"neighborhood\":\"北三环中路40号社区(师大北路)\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"杏坛路\",\"streetNumber\":\"40-5号\",\"country\":\"中国\",\"province\":\"北京市\",\"city\":\"\",\"district\":\"海淀区\",\"township\":\"北太平庄街道\"},\"formattedAddress\":\"北京市海淀区北太平庄街道北三环中路40号社区(师大北路)\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+    "sfzx": "1",
+    "school_reason": "开学啦",
+    "has_vaccine": "1",
+    "sfjzdezxgym": "1",
+    "id": "13578780",
+    "eai-sess": "6chrfu769f8q115kqhmr9f28r7"
+  }
+]
