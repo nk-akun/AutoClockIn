@@ -1,0 +1,19 @@
+[
+  {
+    "uid": "49056",
+    "vaccine_related_explain": "已接种～",
+    "vaccine_in_school": "3",
+    "body_heat": "2",
+    "address": "山东省德州市平原县恩城镇康满园体验馆龙港·世纪城",
+    "area": "山东省 德州市 平原县",
+    "province": "山东省",
+    "city": "德州市",
+    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":37.15704671224,\"R\":116.27551812065997,\"lng\":116.275518,\"lat\":37.157047},\"location_type\":\"html5\",\"message\":\"Get geolocation success.Convert Success.Get address success.\",\"accuracy\":150,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"0534\",\"adcode\":\"371426\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"\",\"streetNumber\":\"\",\"country\":\"中国\",\"province\":\"山东省\",\"city\":\"德州市\",\"district\":\"平原县\",\"towncode\":\"371426103000\",\"township\":\"恩城镇\"},\"formattedAddress\":\"山东省德州市平原县恩城镇康满园体验馆龙港·世纪城\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+    "sfzx": "0",
+    "school_reason": "开学啦",
+    "has_vaccine": "1",
+    "sfjzdezxgym": "1",
+    "id": "17112327",
+    "eai-sess": "6chrfu769f8q115kqhmr9f28r7"
+  }
+]

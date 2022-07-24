@@ -41,7 +41,7 @@ var (
 func DoReport() error {
 	log.Printf("开始打卡~")
 
-	reportFile, err := os.Open("/root/work/repos/gorepos/src/github.com/nk-akun/AutoClockIn/report_conf_mrkandrj.json")
+	reportFile, err := os.Open("/root/work/repos/gorepos/src/github.com/nk-akun/AutoClockIn/report_conf_mrk.json")
 	if err != nil {
 		log.Printf("open file error=%+v\n", err)
 		return err
